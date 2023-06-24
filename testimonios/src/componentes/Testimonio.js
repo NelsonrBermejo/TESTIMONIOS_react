@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/Testimonio.css';
 
 //componente Funcional
 //retorna jsx
