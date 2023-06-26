@@ -6,16 +6,16 @@ import React from 'react';
  * @param {texto} props un texto en específico 
  * @param {esBotonDeClic} props dependiendo del valor se le asigna una clase u otra. si es V la clase es boron-clic
  * y si es falso será boton-reiniciar   
- * @param {esBotonDeClic} propFuncion para manejar los clics. Con el contador  actualiza el número de clics el cual esta en otro componente
+ * @param {esBotonDeClic} propFuncion llama a la funcion manejarClic o reiniciarClic.
  * @return  retorna un jsx con el elemento y el texto especificado  
  */
-function Boton({ texto, esBotonDeClic  }) {
+function Boton({ texto, esBotonDeClic, manejarClic }) {
 	return (
-		<botton 
+		<button 
 			className={ esBotonDeClic ? 'boton-clic' : 'boton-reiniciar' }
-			>
+			onClick={manejarClic}>
 			{texto}
-		</botton>
+		</button>
 	);
 }
 
