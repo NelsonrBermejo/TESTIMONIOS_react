@@ -18,11 +18,12 @@ const [numClics, setNumClics] = useState(0);
  const manejarClic = () => {
   //console.log('Clic');
   setNumClics(numClics +1);
-}
+};
 
  const reiniciarContador = () => {
-  console.log('Reiniciar Contador');
-}
+  //console.log('Reiniciar Contador');
+  setNumClics(0);
+};
 
 
 
