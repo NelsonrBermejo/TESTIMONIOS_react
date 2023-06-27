@@ -2,17 +2,11 @@ import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
+import { manejarClic } from './componentes/BotonContador';
+import { reiniciarContador } from './componentes/BotonContador';
 
 
 function App() {
-
-  const manejarClic = () => {
-    console.log('Clic');
-  }
-
-  const reiniciarContador = () => {
-    console.log('Reiniciar Contador');
-  }
 
   return (
     <div className='App'>

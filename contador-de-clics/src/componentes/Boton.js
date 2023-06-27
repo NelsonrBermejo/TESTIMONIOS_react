@@ -1,5 +1,6 @@
 import React from 'react';
-import '../stylesheets/Boton.css'
+import '../stylesheets/Boton.css';
+
 /**
  *
  * @props Se utiliza unas sintaxis de desestructuración:ej. en lugar de props.texto se utiliza {texto}
