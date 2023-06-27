@@ -1,4 +1,4 @@
 # Proyectos_react
 react projects
 
-![1_nwhfNwNtPw-bPg8WC9uCBg](https://github.com/NelsonrBermejo/proyectos_react/assets/55325268/c2d50fdc-3e80-471b-adfb-75be19085e02)
+![react_1](https://github.com/NelsonrBermejo/proyectos_react/assets/55325268/e21cc957-d69b-4993-9205-f487997644db)
