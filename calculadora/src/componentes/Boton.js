@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 
 /**
  * 
@@ -6,8 +6,18 @@ import react from 'react';
  * @returns el jsx con el valor 1
  */
 function Boton(props) {
-    return (
-			<div>
+/**
+ * 
+ * @param  valor 
+ * @returns si no es un número, un punto o si no es un igual lo considero un OPERADOR y devuelve true
+ */
+	const esOperador = valor => {
+		return isNaN(valor) && (valor != '.') && (valor != '=');
+	};
+   
+	return (
+			<div 
+			className={`boton-contenedor ${ esOperador(props.children) ? 'operador' : null }`}>
 				{props.children}
 			</div>
     );
