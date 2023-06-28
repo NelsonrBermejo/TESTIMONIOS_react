@@ -17,7 +17,7 @@ function Boton(props) {
    
 	return (
 			<div 
-			className={`boton-contenedor ${ esOperador(props.children) ? 'operador' : null }`}>
+			className={`boton-contenedor ${ esOperador(props.children) ? 'operador' : '' }`.trimEnd()}>
 				{props.children}
 			</div>
     );
