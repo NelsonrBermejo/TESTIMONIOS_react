@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../stylesheets/Boton.css';
 /**
  * 
  * @param {*} recibe el valor de <Boton>1</Boton> 
