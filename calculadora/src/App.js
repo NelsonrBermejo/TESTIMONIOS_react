@@ -14,7 +14,7 @@ function App() {
         />
       </div>
       <div className='contenedor-calculadora'>
-        <Pantalla />
+        <Pantalla/>
         <div className='fila'>
           <Boton>1</Boton>
           <Boton>2</Boton>

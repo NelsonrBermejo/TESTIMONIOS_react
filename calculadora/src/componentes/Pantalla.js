@@ -6,7 +6,7 @@ import '../stylesheets/Pantalla.css';
  * @param {*} Input es el valor ingresado por el usuario 
  * @returns muestro en pantalla el valor ingresado por el usuario
  */
-const Pantalla = (input) => (
+const Pantalla = ({input}) => (
   <div className='input'>
     {input}
   </div>
