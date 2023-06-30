@@ -12,7 +12,7 @@ function Boton(props) {
  * @returns si no es un número, un punto o si no es un igual lo considero un OPERADOR y devuelve true
  */
 	const esOperador = valor => {
-		return isNaN(valor) && (valor != '.') && (valor != '=');
+		return isNaN(valor) && (valor !== '.') && (valor !== '=');
 	};
    
 	return (

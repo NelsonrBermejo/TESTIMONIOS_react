@@ -18,7 +18,11 @@ function App() {
   };
 
   const calcularResultado = () => {
-    setInput(evaluate(input));
+    if (input){
+      setInput(evaluate(input));
+    } else {
+      alert("debe ingresar un valor");
+    }
   };
   
   return (
