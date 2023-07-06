@@ -9,8 +9,8 @@ function Tarea ({ texto }) {
 			<div className='tarea-texto'>
 				{texto}
 			</div>
-			<div className='tarea-icono'>
-				<AiOutlineCloseCircle />
+			<div className='tarea-contenedor-iconos'>
+				<AiOutlineCloseCircle className='tarea-icono' />
 			</div>
     </div>
 
