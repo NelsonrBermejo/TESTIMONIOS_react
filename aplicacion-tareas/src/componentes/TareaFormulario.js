@@ -26,7 +26,9 @@ function TareaFormulario(props)	{
 			completada: false
 		}
 
-		console.log(tareaNueva);
+		//console.log(tareaNueva);
+		/* OCURRE CUANDO EL FORMULARIO INTENTE ENVIARSE */
+		props.onSubmit(tareaNueva)
 	}
 
 
