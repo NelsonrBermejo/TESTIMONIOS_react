@@ -1,6 +1,7 @@
 //import React from 'react';
 import React, {useState} from 'react';
-import '../hojas-de-estilo/TareaFormulario.css'
+import '../hojas-de-estilo/TareaFormulario.css';
+import { v4 as uuidv4 } from 'uuid';
 
 //Ingreso de tarea
 function TareaFormulario(props)	{
@@ -10,19 +11,29 @@ function TareaFormulario(props)	{
 	const manejarCambio = e => {
 		//console.log('Escribiendo...');
 		setInput(e.target.value);
-		console.log(e.target.value);
+		//console.log(e.target.value);
 	}
 
 	const manejarEnvio = e => {
+		e.preventDefault();
+		console.log("Enviando formulario...");
+
 		const tareaNueva = {
-			id: '34545',
-			texto: 'Hola'
+			//id: '34545',
+			id: uuidv4(),
+			//texto: 'Hola'
+			texto: input,
+			completada: false
 		}
+
+		console.log(tareaNueva);
 	}
 
 
 	return	(
-		<form className='tarea-formulario'>
+		<form 
+			className='tarea-formulario'
+			onSubmit={manejarEnvio}>
 			<input
 				className='tarea-input'
 				type='text'
