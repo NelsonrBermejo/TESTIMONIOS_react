@@ -8,8 +8,18 @@ function ListaDeTareas()	{
 	const [tareas, setTareas] = useState ([]);
 
 	const agregarTarea = tarea => {
-		console.log("Tarea Agregada a mi lista de Tareas");
+		//console.log("Tarea Agregada a mi lista de Tareas");
 		console.log(tarea);
+		//verifico que mi texto de tareas no este vavio con trim()
+		if (tarea.texto.trim())	{
+			//elimino espacios vacios atras y adelante 
+			tarea.texto = tarea.texto.trim();
+
+			//agrego tarea al principio del arreglo
+			const tareasActualizadas = [tarea, ...tareas];
+			//actualizo el estado de mis tareas
+			setTareas(tareasActualizadas);
+		}
 	}
 
 	return (
@@ -19,6 +29,8 @@ function ListaDeTareas()	{
 				{
 					tareas.map((tarea) =>
 						<Tarea
+							key={tarea.id}
+							id={tarea.id}
 							texto={tarea.texto}
 							completada={tarea.completada} />
 					)
