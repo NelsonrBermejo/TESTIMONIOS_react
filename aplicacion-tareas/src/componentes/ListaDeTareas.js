@@ -27,6 +27,17 @@ function ListaDeTareas()	{
 		setTareas(tareasActualizadas);
 	}
 
+	const completarTarea = id => {
+		const tareasActualizadas = tareas.map(tarea => {
+			if (tarea.id === id){
+				//invierto el estado de mi tarea 7
+				tarea.completada = !tarea.completada;
+			}
+			return tarea;
+		});
+		setTareas(tareasActualizadas);
+	}
+
 	return (
 		<>
 			<TareaFormulario onSubmit={agregarTarea} />
@@ -38,6 +49,7 @@ function ListaDeTareas()	{
 							id={tarea.id}
 							texto={tarea.texto}
 							completada={tarea.completada}
+							completarTarea={completarTarea}
 							eliminarTarea={eliminarTarea} />
 					)
 				}
